@@ -13,4 +13,4 @@ class User(db.Model):
         return '<User : %s>' % self.username
 
 
-db.create_all()
+# db.create_all()
