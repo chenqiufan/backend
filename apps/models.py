@@ -6,8 +6,8 @@ class User(db.Model):
 
     id = db.Column(db.Integer,primary_key=True,autoincrement=True)
     username = db.Column(db.String(120),unique=True)
-    phonenumber = db.Column(db.String(120),unique=False)
-    password = db.Column(db.String(120),unique=True)
+    phonenumber = db.Column(db.String(120),unique=True)
+    password = db.Column(db.String(120),unique=False)
 
     def __repr__(self):
         return '<User : %s>' % self.username
