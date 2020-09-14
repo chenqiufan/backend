@@ -16,3 +16,12 @@ def login():
 @api_bp.route('/demo')
 def demo():
     return "Demo"
+
+@api_bp.route('/user_api_v1/register',methods=['post'])
+def regieter():
+    """
+    注册
+    :return:
+    """
+    print(request.data)
+    return 'successed'
